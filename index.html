@@ -431,10 +431,8 @@
         }
 
         .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         .about-text h3 {
@@ -644,15 +642,21 @@
 
         .project-image {
             width: 100%;
-            height: 250px;
+            height: 300px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
-            color: var(--accent);
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            background: var(--dark);
         }
 
         .project-content {
@@ -928,14 +932,16 @@
 
         .contact-content {
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 5rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
             align-items: start;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .contact-info h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--light);
             margin-bottom: 1.5rem;
         }
@@ -993,7 +999,7 @@
             background: rgba(26, 50, 99, 0.2);
             border: 1px solid rgba(250, 185, 91, 0.2);
             border-radius: 16px;
-            padding: 3rem;
+            padding: 2.5rem;
             backdrop-filter: blur(10px);
         }
 
@@ -1342,20 +1348,7 @@
                         I'm committed to writing clean code, creating reusable components, optimizing performance, and delivering high-quality user experiences that make a difference.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Projects Completed</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Client Satisfaction</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -1433,7 +1426,9 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">📚</div>
+                    <div class="project-image">
+                        <img src="assets/photos/mks.png" alt="Academic Management System">
+                    </div>
                     <div class="project-content">
                         <h3 class="project-title">Academic Management System</h3>
                         <p class="project-description">
@@ -1454,30 +1449,31 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🛒</div>
+                    <div class="project-image"><img src="assets/photos/E-commerce MiniStore.png" alt=""></div>
                     <div class="project-content">
                         <h3 class="project-title">E-commerce MiniStore</h3>
                         <p class="project-description">
                             Modern responsive online store UI with product listing, filtering, and user-friendly layout. Built with focus on user experience and clean design patterns.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Angular</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">REST API</span>
+                             <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Akramsaad22" target="_blank" class="project-link">
-                                View Code →
+                            <a href="https://akramsaad22.github.io/nti/" target="_blank" class="project-link">
+                                Live Demo →
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🚀</div>
+                    <div class="project-image"><img src="assets/photos/faster.png" alt="NTI Final Project"></div>
                     <div class="project-content">
-                        <h3 class="project-title">NTI Final Project</h3>
+                        <h3 class="project-title">Fast Delivery Partner</h3>
                         <p class="project-description">
                             Production-style responsive web interface using modern front-end practices, clean architecture, and optimized performance for real-world deployment.
                         </p>
@@ -1488,7 +1484,7 @@
                             <span class="tag">Clean Code</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://akramsaad22.github.io/nti-final-project/" target="_blank" class="project-link">
+                            <a href="https://akramsaad22.github.io/faster/" target="_blank" class="project-link">
                                 Live Demo →
                             </a>
                         </div>
@@ -1549,31 +1545,7 @@
                 <h2 class="section-title">Experience & Education</h2>
             </div>
             <div class="experience-content">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-company">Digital Egypt Pioneers Initiative (DEPI)</div>
-                            <div class="experience-role">Front-End Developer Trainee</div>
-                        </div>
-                        <span class="experience-period">2024</span>
-                    </div>
-                    <p class="experience-description">
-                        Intensive training program through the National Telecommunication Institute (NTI), focusing on building responsive web applications, reusable UI components, and integrating front-end with APIs while following clean architecture and industry best practices.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-company">National Telecommunication Institute (NTI)</div>
-                            <div class="experience-role">Web Development Training</div>
-                        </div>
-                        <span class="experience-period">2023-2024</span>
-                    </div>
-                    <p class="experience-description">
-                        Comprehensive training in modern web development technologies, working on real-world projects including academic management systems and e-commerce platforms. Gained hands-on experience with Angular, TypeScript, and modern front-end workflows.
-                    </p>
-                </div>
-                <div class="experience-item">
+                 <div class="experience-item">
                     <div class="experience-header">
                         <div>
                             <div class="experience-company">Damanhour University</div>
@@ -1585,6 +1557,31 @@
                         Currently pursuing a Bachelor's degree in Communications and Electronics Engineering, combining technical engineering knowledge with modern web development skills.
                     </p>
                 </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-company">Digital Egypt Pioneers Initiative (DEPI)</div>
+                            <div class="experience-role">Front-End Developer Trainee</div>
+                        </div>
+                        <span class="experience-period">2025-2026</span>
+                    </div>
+                    <p class="experience-description">
+                        Intensive training program through the National Telecommunication Institute (NTI), focusing on building responsive web applications, reusable UI components, and integrating front-end with APIs while following clean architecture and industry best practices.
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-company">National Telecommunication Institute (NTI)</div>
+                            <div class="experience-role">Web Development Training</div>
+                        </div>
+                        
+                    </div>
+                    <p class="experience-description">
+                        Comprehensive training in modern web development technologies, working on real-world projects including academic management systems and e-commerce platforms. Gained hands-on experience with Angular, TypeScript, and modern front-end workflows.
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -1657,7 +1654,7 @@
                             <div class="contact-icon">📧</div>
                             <div class="contact-item-text">
                                 <strong>Email</strong>
-                                <span>akramshwail288@gmail.com</span>
+                                <span><a href="mailto:akramshwail288@gmail.com" style="color: var(--accent); text-decoration: none;">akramshwail288@gmail.com</a></span>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1688,21 +1685,7 @@
                         </a>
                     </div>
                 </div>
-                <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                </form>
+                
             </div>
         </div>
     </section>
@@ -1711,12 +1694,12 @@
     <footer>
         <div class="container">
             <div class="footer-brand">AS.</div>
-            <p>&copy; 2024 Akram Saad. All rights reserved.</p>
+            <p>&copy; 2026 Akram Saad. All rights reserved.</p>
             <p>Designed & Built with passion in Egypt 🇪🇬</p>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Mobile Menu Toggle
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
@@ -1791,7 +1774,7 @@
 
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                     document.querySelectorAll('.nav-links a').forEach(link => {
-                          link.style.color = ''                     ;
+                        link.style.color = '';
                     });
                     if (navLink) {
                         navLink.style.color = 'var(--accent)';
